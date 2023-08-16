@@ -4,8 +4,6 @@ import {data} from '../data/photos'
 import { ChevronLeft, ChevronRight } from "react-feather"
 
 
-
-
 export default function Home () {
 const [pictures, setPictures] = useState([])
 const [currentPictureIndex, setCurrentPictureIndex] = useState(0);
@@ -33,22 +31,29 @@ useEffect (() => {
 getPictures()
 }, [])
 
+const [prevIndex, setPrevIndex] = useState(0)
 const nextPicture = () => {
     setCurrentPictureIndex((prevIndex) =>
       prevIndex === data.length - 1 ? 0 : prevIndex + 1
     );
   };
 
-  const previousPicture = () => {
-    setCurrentPictureIndex((prevIndex) =>
-      prevIndex === 0 ? data.length - 1 : prevIndex - 1
-    );
+const previousPicture = () => {
+setCurrentPictureIndex((prevIndex) =>
+    prevIndex === 0 ? data.length - 1 : prevIndex - 1
+);
   };
 
-return (
+  //Slide carrousel working
+  useEffect(() => {
+    const slideInterval = setInterval(nextPicture, 3000)
+    return () => clearInterval(slideInterval)
+  }, [])
 
-<div className="bg-black">
-<div className="flex items-center justify-center min-h-screen relative">
+return (
+<div className="bg-#616161">
+<div className="flex items-center justify-center min-h-screen relative ransition-transform ease-out duration-500"
+    style={{ transform: `translateX(-${prevIndex * 100}%)` }}>
   <div >
     <img
       className="h-[600px] w-[450px] mx-auto"
@@ -57,10 +62,10 @@ return (
     />
    <div className="relative inset-0 flex items-center justify-center gap-14">
     <button onClick={previousPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
-        <ChevronLeft size={40} />
+        <ChevronLeft size={30} />
        </button>
     <button onClick={nextPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
-    <ChevronRight size={40} />
+    <ChevronRight size={30} />
     </button>
   </div>
   </div>
