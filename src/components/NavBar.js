@@ -2,12 +2,12 @@ import {Link} from 'react-router-dom'
 
 export default function NavBar() {
     return (
-        <div className='navBar'>
-            <nav className='bg-grey-333 flex justify-center gap-24'>
-                <Link className=" text-white hover:bg-red" to='/'>HOME</Link>
-                <Link className=" text-white hover:bg-red" to='/Portfolio'>PORTFOLIO</Link>
-                <Link className=" text-white hover:bg-red" to='/ContactForm'>CONTACT</Link>
-
+        <div >
+            <nav className='bg-gray-800 flex justify-center p-5 text-xl'>
+                <Link className="mx-10 text-white hover:text-red-500 active:text-red-500 " to='/'>HOME</Link>
+                <Link className="mx-10 text-white hover:text-red-500 active:text-red-500" to='/Portfolio'>PORTFOLIO</Link>
+                <Link className="mx-10 text-white hover:text-red-500 active:text-red-500" to='/ContactForm'>CONTACT</Link>
+                <Link className="mx-10 text-white hover:text-red-500 active:text-red-500" to='/ContactForm'>BLOG</Link>
             </nav>
         </div>
     )

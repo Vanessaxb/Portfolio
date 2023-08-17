@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import {data} from '../data/photos'
 // import Carousel from "../components/Carousel"
 import { ChevronLeft, ChevronRight } from "react-feather"
+import { Link } from "react-router-dom";
 
 
 export default function Home () {
@@ -63,15 +64,28 @@ return (
             />
         
         </div>
-            <div className="absolute inset-0 flex items-center justify-between p-80 mx-28">
-                <button onClick={previousPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white ml-40">
+            <div className="absolute inset-0 flex items-center justify-between p-80 mx-3">
+                <button onClick={previousPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white ml-32">
                     <ChevronLeft size={30} />
                 </button>
-                <button onClick={nextPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white mr-40">
+                <button onClick={nextPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white mr-32">
                     <ChevronRight size={30} />
                 </button>
             </div>
     </div>
+    <div className="pHome">
+        <p className="font-raleway">Hi, I'm a Software Engineer. <br/>
+        My love for tech, people and travels is what moves me.</p>
+    </div>
+    <div className="buttonHome">
+        <Link className="font-raleway hover:text-red-500 " to='/Portfolio'>View my work</Link>
+         
+        
+    </div>
+    <section id="Projects">
+        {/* <h2>Project</h2> */}
+    </section>
 </div>
+
 );
 }

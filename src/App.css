@@ -13,14 +13,58 @@
   transition: height 0.3s ease-out;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  size: 24px;
+  align-items: top;
+  justify-content: space-evenly;
+  /* padding: 90px; */
+  font-size: 24px;
   text-transform: uppercase;
   transition: color 0.5s;
+  
 }
 
+.navLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0
+}
 
+.pHome{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+}
+
+.buttonHome{  
+margin-top: 20px;
+padding: 10px;;
+background: white;
+border: 3px solid #333;
+box-sizing: inherit;
+cursor: pointer;
+display: inline-block;
+font-size: 18pt;
+color:#333;
+padding: 10px 20px;
+transition: all 0.5s;
+
+
+}
+
+/* .buttonHome:hover{
+  background: #333
+  
+} */
+
+h1 {
+  font-size: 30px;
+  color:#1dcb9d;
+}
+
+.pic1{
+  height: 300px;
+  width: 250px;
+
+} 
 
 
 .App-logo {
