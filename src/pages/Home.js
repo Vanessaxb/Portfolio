@@ -63,19 +63,19 @@ return (
             alt="unplash images"
             />
         
-        </div>
-            <div className="absolute inset-0 flex items-center justify-between p-80 mx-3">
-                <button onClick={previousPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white ml-32">
+        </div >
+            <div className="absolute inset-0 flex items-center justify-between p-80 mx-1">
+                <button onClick={previousPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white ml-72">
                     <ChevronLeft size={30} />
                 </button>
-                <button onClick={nextPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white mr-32">
+                <button onClick={nextPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white mr-72">
                     <ChevronRight size={30} />
                 </button>
             </div>
     </div>
     <div className="pHome">
         <p className="font-raleway">Hi, I'm a Software Engineer. <br/>
-        My love for tech, people and travels is what moves me.</p>
+        My love for tech, people and travelling is what moves me.</p>
     </div>
     <div className="buttonHome">
         <Link className="font-raleway hover:text-red-500 " to='/Portfolio'>View my work</Link>
