@@ -1,7 +1,25 @@
 .App {
   text-align: center;
-  background-color:#282c34
+  background-color: white
+  /* background-color:#282c34 */
 }
+.navBar{
+  background: #333;
+  height: 50px;
+  max-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  transition: height 0.3s ease-out;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  size: 24px;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+
 
 
 
