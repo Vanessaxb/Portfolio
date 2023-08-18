@@ -74,7 +74,7 @@ return (
             </div>
     </div>
     <div className="pHome">
-        <p className="font-raleway">Hi, I'm a Software Engineer. <br/>
+        <p className="font-raleway text-3xl">Hi, I'm a Software Engineer. <br/>
         My love for tech, people and travelling is what moves me.</p>
     </div>
     <div className="buttonHome">

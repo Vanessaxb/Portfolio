@@ -5,7 +5,14 @@ module.exports = {
     extend: {
       fontFamily: {
         raleway:["Raleway"]
-      }
+      },
+      // backgroundColor: {
+      //   active:['active']
+      // },
+      // textColor: {
+      //   active:['active']
+      // },
+      
     },
   },
   plugins: [],

@@ -2,9 +2,13 @@
   text-align: center;
   background-color: white
   /* background-color:#282c34 */
+  
+
 }
-.navBar{
+/* .navBar{
+  position: fixed;
   background: #333;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
   height: 50px;
   max-width: 100%;
   overflow: hidden;
@@ -16,18 +20,20 @@
   align-items: top;
   justify-content: space-evenly;
   /* padding: 90px; */
-  font-size: 24px;
+  /* font-size: 24px;
   text-transform: uppercase;
   transition: color 0.5s;
+  z-index: 1000;
+} */
+ 
   
-}
 
-.navLink {
+/* .navLink {
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 0
-}
+} */
 
 .pHome{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -46,6 +52,7 @@ font-size: 18pt;
 color:#333;
 padding: 10px 20px;
 transition: all 0.5s;
+
 
 
 }
