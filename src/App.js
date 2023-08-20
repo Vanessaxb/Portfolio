@@ -10,8 +10,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <ContactForm /> */}
-      
+            
       <Routes>
         <Route path='/' element={ <Home />}> </Route>
         <Route path='/Portfolio' element={ <Portfolio />}></Route>
