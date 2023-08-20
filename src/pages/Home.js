@@ -64,7 +64,7 @@ return (
       <FaLinkedin size={40}/>       
     </a>
   </div>
-  <div className="relative mt-8 md:mt-16">
+  <div className="relative">
     <div style={{ transform: `translateX(-${prevIndex * 100}%)`}}>
       <img
         className="transition-transform ease-out duration-500 h-[300px] md:h-[600px] w-[240px] md:w-[440px] mx-auto rounded-3xl p-1 shadow bg-white/80"
@@ -90,12 +90,48 @@ return (
   <div className="buttonHome text-center md:text-left p-4">
     <Link className="font-raleway hover:text-red-500 " to='/Portfolio'>View my work</Link>
   </div>
-
-        <section id="Projects">
-            {/* <h2>Project</h2> */}
-        </section>
+<section>
+  <div className="relative">
+  <div className="absolute inset-0">
+    <img
+      className="w-full h-full object-cover opacity-70"
+      src={require("../images/krisjanis-kazaks-E6LuL8di2nM-unsplash.jpg")}
+      alt="Background"
+    />
+  </div>
+  <div className="flex flex-col items-center mt-36 font-raleway">
+    <img
+      className="h-[300px] w-[245px] rounded-full shadow p-1 bg-gray-200/80 text-gray-800 z-20"
+      src={require("../images/profile.jpg")}
+      alt="Profile Picture"
+    />
+    <div className="bg-gray-600/20 p-4 shadow-md rounded-md mt-4 backdrop-blur z-10">
+      <h2 className="mt-4 text-3xl md:text-6xl mb-4 z-20 text-red-500">About</h2>
+      <p className="font-raleway text-base md:text-lg text-center p-2 md:p-4 z-20 text-white">
+       
+        Proficient across a spectrum of technologies, including HTML, CSS, Tailwind,
+        JavaScript, React/Redux, Express JS, Node JS, MERN, SQL,
+        and MongoDB, I'm committed to delivering innovative solutions that
+        bridge the gap between user needs and cutting-edge technology. My
+        journey in the tech industry is complemented by my academic
+        accomplishments: a
+        degree in Electronics Engineering and an MBA.
+        
+        <br />
+        <br />
+        With professional experience spanning Telecom, Humanitarian Aid, and
+        Finances, I bring a diverse background to the world of software
+        engineering. Fluent in three languages—Portuguese, Spanish, and
+        English—I've had the privilege of working across more than ten
+        different countries. In these dynamic environments, I've led
+        transcultural teams and managed multi-million-dollar project budgets,
+        honing my adaptability and communication skills.
+      </p>
     </div>
-
+  </div>
+</div>
+</section>
+</div>
 
 );
 }
