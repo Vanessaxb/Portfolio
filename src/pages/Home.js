@@ -95,7 +95,7 @@ return (
   <div className="absolute inset-0">
     <img
       className="w-full h-full object-cover opacity-70"
-      src={require("../images/krisjanis-kazaks-E6LuL8di2nM-unsplash.jpg")}
+      src={require("../images/HomeBackground.jpg")}
       alt="Background"
     />
   </div>
@@ -106,7 +106,7 @@ return (
       alt="Profile Picture"
     />
     <div className="bg-gray-600/20 p-4 shadow-md rounded-md mt-4 backdrop-blur z-10">
-      <h2 className="mt-4 text-3xl md:text-6xl mb-4 z-20 text-red-500">About</h2>
+      <h2 className="mt-4 text-3xl md:text-6xl mb-4 z-20 text-white">Vanessa Beattie</h2>
       <p className="font-raleway text-base md:text-lg text-center p-2 md:p-4 z-20 text-white">
        
         Proficient across a spectrum of technologies, including HTML, CSS, Tailwind,
