@@ -3,6 +3,7 @@ import {data} from '../data/photos'
 // import Carousel from "../components/Carousel"
 import { ChevronLeft, ChevronRight } from "react-feather"
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 export default function Home () {
@@ -53,39 +54,48 @@ return () => clearInterval(slideInterval)
 
 console.log(data.length);
 return (
-<div >
-    <div className="overflow-hidden relative my-20">
-        <div
-        style={{ transform: `translateX(-${prevIndex * 100}%)` }}>
-            <img
-            className="flex items-center justify-center ransition-transform ease-out duration-500 h-[600px] w-[440px] mx-auto rounded-3xl p-1 shadow bg-white/80"
-            src={data[currentPictureIndex]?.urls.small}
-            alt="unplash images"
-            />
-        
-        </div >
-            <div className="absolute inset-0 flex items-center justify-between p-80 mx-1">
-                <button onClick={previousPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white ml-72">
-                    <ChevronLeft size={30} />
-                </button>
-                <button onClick={nextPicture}className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white mr-72">
-                    <ChevronRight size={30} />
-                </button>
-            </div>
+<div className="p-4 md:p-20 flex flex-col items-center justify-center min-h-screen">
+  <div className="fixed left-0 top-1/2 transform -translate-y-1/2 ">
+    <a href="https://github.com/Vanessaxb" target='_blank' rel="noreferrer">
+      <FaGithub size={40} />
+    </a>
+    <br/>
+    <a href="https://www.linkedin.com/in/vanessa-beattie/" target='_blank' rel="noreferrer">
+      <FaLinkedin size={40}/>       
+    </a>
+  </div>
+  <div className="relative mt-8 md:mt-16">
+    <div style={{ transform: `translateX(-${prevIndex * 100}%)`}}>
+      <img
+        className="transition-transform ease-out duration-500 h-[300px] md:h-[600px] w-[240px] md:w-[440px] mx-auto rounded-3xl p-1 shadow bg-white/80"
+        src={data[currentPictureIndex]?.urls.small}
+        alt="unplash images"
+      />
     </div>
-    <div className="pHome">
-        <p className="font-raleway text-3xl">Hi, I'm a Software Engineer. <br/>
-        My love for tech, people and travelling is what moves me.</p>
+        <div className="absolute top-1/2 -left-8 md:-left-12 flex items-center p-4 md:p-8">
+          <button onClick={previousPicture} className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
+            <ChevronLeft size={30} />
+          </button>
+        </div>
+        <div className="absolute top-1/2 -right-8 md:-right-12 flex items-center p-4 md:p-8">
+          <button onClick={nextPicture} className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
+            <ChevronRight size={30} />
+          </button>
+        </div>
+      </div>
+      <div className="pHome mt-6 md:mt-12">
+    <p className="font-raleway text-lg md:text-3xl text-center md:text-center">Hi, I'm a Software Engineer. <br/>
+    My love for tech, people and travelling is what moves me.</p>
+  </div>
+  <div className="buttonHome text-center md:text-left p-4">
+    <Link className="font-raleway hover:text-red-500 " to='/Portfolio'>View my work</Link>
+  </div>
+
+        <section id="Projects">
+            {/* <h2>Project</h2> */}
+        </section>
     </div>
-    <div className="buttonHome">
-        <Link className="font-raleway hover:text-red-500 " to='/Portfolio'>View my work</Link>
-         
-        
-    </div>
-    <section id="Projects">
-        {/* <h2>Project</h2> */}
-    </section>
-</div>
+
 
 );
 }

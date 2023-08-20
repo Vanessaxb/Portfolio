@@ -8,16 +8,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
 
-.carousel-container {
+/* .carousel-container {
     position: relative;
     width: 300px; /* Adjust as needed */
-    height: 400px; /* Adjust as needed */
-    overflow: hidden;
-  }
+    /* height: 400px; /* Adjust as needed */
+    /* overflow: hidden; */
+  /* }   */
+  
+  /*
   
   .carousel-slide {
     position: absolute;
     width: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }
+  } 
+  */
