@@ -106,24 +106,24 @@ return (
       alt="Profile Picture"
     />
     <div className="bg-gray-600/20 p-4 shadow-md rounded-md mt-4 backdrop-blur z-10">
-      <h2 className="mt-4 text-3xl md:text-6xl mb-4 z-20 text-white">Vanessa Beattie</h2>
+      <h2 className="mt-4 text-3xl md:text-6xl mb-4 z-20 text-red-500">Vanessa Beattie</h2>
       <p className="font-raleway text-base md:text-lg text-center p-2 md:p-4 z-20 text-white">
        
-        Proficient across a spectrum of technologies, including HTML, CSS, Tailwind,
+        Proficient across a spectrum of technologies, including <span className="text-green-400">HTML, CSS, Tailwind,
         JavaScript, React/Redux, Express JS, Node JS, MERN, SQL,
-        and MongoDB, I'm committed to delivering innovative solutions that
-        bridge the gap between user needs and cutting-edge technology. My
+        and MongoDB</span>, I'm committed to delivering innovative solutions that
+        meets the user needs with cuttting-edge technology. My
         journey in the tech industry is complemented by my academic
-        accomplishments: a
-        degree in Electronics Engineering and an MBA.
+        accomplishments: <span className="text-green-400">a
+        degree in Electronics Engineering and an MBA</span>.
         
         <br />
         <br />
         With professional experience spanning Telecom, Humanitarian Aid, and
         Finances, I bring a diverse background to the world of software
-        engineering. Fluent in three languages—Portuguese, Spanish, and
-        English—I've had the privilege of working across more than ten
-        different countries. In these dynamic environments, I've led
+        engineering. Fluent in three languages— <span className="text-green-400">Portuguese, Spanish, and
+        English</span>—I've had the privilege of working across more than ten
+        different countries. <br/>In these dynamic environments, I've led
         transcultural teams and managed multi-million-dollar project budgets,
         honing my adaptability and communication skills.
       </p>
