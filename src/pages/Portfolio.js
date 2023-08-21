@@ -47,8 +47,15 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-14 md:mt-28 ">
-          <div className="md:w-1/2 md:mr-2">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-14 md:mt-28 ml-12 md:ml-24">
+          <div className="md:w-1/2">
+            <img
+              className="h-[350px] w-[500px] rounded-3xl p-1 shadow bg-gray-200/80"
+              src={require("../images/StockApp.png")}
+              alt="Stock App"
+            />
+          </div>
+          <div className="md:w-1/2 md:mr-52">
             <h1 className=" text-2xl md:text-4xl text-green-500 font-raleway mb-3 md:mb-5 text-center md:text-center">
               Stocks App
             </h1>
@@ -75,13 +82,6 @@ export default function Portfolio() {
                 See Live Version
               </a>
             </div>
-          </div>
-          <div className="md:w-1/2">
-            <img
-              className="h-[350px] w-[500px] rounded-3xl p-1 shadow bg-gray-200/80"
-              src={require("../images/StockApp.png")}
-              alt="Stock App"
-            />
           </div>
         </div>
       </div>
