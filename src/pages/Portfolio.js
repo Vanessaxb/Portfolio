@@ -10,7 +10,7 @@ export default function Portfolio() {
       </h1>
       <div className=" items-center p-20 mt-4 md:mt-20 ">
         <div className="flex flex-col md:flex-row justify-center items-center">
-          <div className="rounded-3xl p-1 shadow bg-gray-200/80 md:mr-4 mb-4 md:mb-0">
+          <div className="rounded-3xl p-1 shadow bg-gray-200/80 md:mr-4 mb-2 md:mb-0">
             <ReactPlayer
               url={require("../images/MemoryGameVideo.MP4")}
               controls={true}
@@ -50,7 +50,7 @@ export default function Portfolio() {
         <div className="flex flex-col md:flex-row justify-center items-center mt-20 md:mt-28 ml-4 md:ml-28">
           <div className="md:w-1/2">
             <img
-              className="h-[350px] md:h-[700] w-[245px] md:w-[490px] rounded-3xl p-1 shadow bg-gray-200/80"
+              className="h-[170px] md:h-[350px] w-[245px] md:w-[490px] rounded-3xl p-1 shadow bg-gray-200/80 mb-2 md:mb-0"
               src={require("../images/StockApp.png")}
               alt="Stock App"
             />
