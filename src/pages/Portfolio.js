@@ -47,10 +47,10 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-14 md:mt-28 ml-12 md:ml-24">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-14 md:mt-28 ml-4 md:ml-28">
           <div className="md:w-1/2">
             <img
-              className="h-[350px] w-[500px] rounded-3xl p-1 shadow bg-gray-200/80"
+              className="h-[350px] md:h-[auto] w-full md:w-[490px] rounded-3xl p-1 shadow bg-gray-200/80"
               src={require("../images/StockApp.png")}
               alt="Stock App"
             />
@@ -59,10 +59,10 @@ export default function Portfolio() {
             <h1 className=" text-2xl md:text-4xl text-green-500 font-raleway mb-3 md:mb-5 text-center md:text-center">
               Stocks App
             </h1>
-            <p className="font-raleway text-lg mr-7">
+            <p className="font-raleway text-base md:text-lg text-center mb-2">
               If you'd like to check live rates for your <br />
-              favorite stocks, look no further. <br /> This was a school
-              assignment that I had lots of fun with. <br /> It was built with
+              favorite stocks, look no further. <br /> This was school
+              assignment was lots of fun. <br/> It was built with
               CSS with FlexBox and JavaScript.
             </p>
             <div className="flex justify-center p-8">
@@ -75,7 +75,7 @@ export default function Portfolio() {
               </a>
               <a
                 className="p-3 ml-3 rounded-xl  text-white bg-green-500 font-raleway hover:text-red-500 mt-2 md:mt-0 "
-                href="https://vanessaxb.github.io/Memory-Game/"
+                href="https://vanessab.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
