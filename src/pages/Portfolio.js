@@ -18,7 +18,7 @@ export default function Portfolio() {
               height="420px"
             />
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 mt-2 md:mt-0">
             <h1 className=" text-2xl md:text-4xl text-green-500 font-raleway mb-3 md:mb-5 text-center ">
               Memory Game
             </h1>
@@ -28,7 +28,7 @@ export default function Portfolio() {
               <br />
               It was built with CSS with FlexBox and JavaScript.
             </p>
-            <div className="flex justify-center p-8 ">
+            <div className="flex justify-center p-8 mr:8 md:mr-16 ">
               <a
                 href="https://github.com/Vanessaxb/Memory-Game.git"
                 target="_blank"
@@ -50,12 +50,12 @@ export default function Portfolio() {
         <div className="flex flex-col md:flex-row justify-center items-center mt-14 md:mt-28 ml-4 md:ml-28">
           <div className="md:w-1/2">
             <img
-              className="h-[350px] md:h-[auto] w-full md:w-[490px] rounded-3xl p-1 shadow bg-gray-200/80"
+              className="h-[350px] md:h-[700] w-full md:w-[490px] rounded-3xl p-1 shadow bg-gray-200/80"
               src={require("../images/StockApp.png")}
               alt="Stock App"
             />
           </div>
-          <div className="md:w-1/2 md:mr-52">
+          <div className="md:w-1/2 md:mr-52 mt-2 md:mt-0">
             <h1 className=" text-2xl md:text-4xl text-green-500 font-raleway mb-3 md:mb-5 text-center md:text-center">
               Stocks App
             </h1>
