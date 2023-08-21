@@ -7,7 +7,7 @@ This is my tech portfolio webpage.
 
 *** Carousel user interface module.
 
-*** Backend free contact form. 
+*** Backend free contact form EmailJS.
 
 *** Unsplash for API.
 

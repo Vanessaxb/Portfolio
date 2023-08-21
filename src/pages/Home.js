@@ -31,12 +31,14 @@ getPictures()
 const [prevIndex, setPrevIndex] = useState(0)
 const nextPicture = () => {
     setCurrentPictureIndex((prevIndex) =>
+      // prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
       prevIndex === data.length - 1 ? 0 : prevIndex + 1
     );
   };
 
 const previousPicture = () => {
 setCurrentPictureIndex((prevIndex) =>
+    // prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
     prevIndex === 0 ? data.length - 1 : prevIndex - 1
 );
   };
@@ -47,6 +49,7 @@ const slideInterval = setInterval(nextPicture, 3000)
 return () => clearInterval(slideInterval)
 }, [])
 
+// console.log(pictures.length);
 console.log(data.length);
 return (
 <div className="p-4 md:p-20 flex flex-col items-center justify-center min-h-screen mt-3 md:mt-6">
@@ -63,6 +66,7 @@ return (
     <div style={{ transform: `translateX(-${prevIndex * 100}%)`}}>
       <img
         className="transition-transform ease-out duration-500 h-[300px] md:h-[600px] w-[240px] md:w-[440px] mx-auto rounded-3xl p-1 shadow bg-white/80"
+        // src={pictures[currentPictureIndex]?.urls.small}
         src={data[currentPictureIndex]?.urls.small}
         alt="unplash images"
       />
@@ -79,7 +83,7 @@ return (
         </div>
       </div>
       <div className="pHome mt-6 md:mt-12">
-    <p className="font-raleway text-lg md:text-3xl text-center md:text-center">Hi, I'm a Software Engineer. <br/>
+    <p className="font-raleway text-lg md:text-4xl text-center md:text-center">Hi, I'm a Software Engineer. <br/>
     My love for tech, people and travelling is what moves me.</p>
   </div>
   <div className="buttonHome text-center md:text-left p-4">
@@ -108,7 +112,7 @@ return (
         Proficient across a spectrum of technologies, including <span className="text-green-400">HTML, CSS, Tailwind,
         JavaScript, MVC Framework, React/Redux, Express JS, Node JS, MERN, SQL, PostgreSQL
         Restful Routes-API, Express Mongoose and MongoDB</span>, I'm committed to delivering 
-        innovative solutions that meets the user needs with cuttting-edge technology. 
+        innovative solutions that meets the user needs through cuttting-edge technology. 
         My journey in the tech industry is complemented by my academic
         accomplishments: <span className="text-green-400">a
         degree in Electronics Engineering and an MBA</span>.

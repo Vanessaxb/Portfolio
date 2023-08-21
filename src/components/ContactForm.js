@@ -8,14 +8,14 @@ export const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs.sendForm(`${process.env.YOUR_SERVICE_ID}`, `${process.env.YOUR_TEMPLATE_ID}`, form.current, `${process.env.YOUR_PUBLIC_KEY}`)
-    emailjs
-      .sendForm(
-        "service_f4iw1ce",
-        "template_3oxr12k",
-        form.current,
-        "6VTgEpWljSgz5cd6t"
-      )
+    emailjs.sendForm(`${process.env.YOUR_SERVICE_ID}`, `${process.env.YOUR_TEMPLATE_ID}`, form.current, `${process.env.YOUR_PUBLIC_KEY}`)
+    // emailjs
+    //   .sendForm(
+    //     "process.env.YOUR_SERVICE_ID",
+    //     "process.env.YOUR_TEMPLATE_ID",
+    //     form.current,
+    //     "process.env.YOUR_PUBLIC_KEY"
+    //   )
       .then(
         (result) => {
           console.log(result.text);
