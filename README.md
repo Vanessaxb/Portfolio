@@ -38,8 +38,6 @@ The main challenge I had was learning how to style my pages using TailWind. It w
 #### WireFaame
 ![alt text](./src/images/WireFrame.png "WireFrame")
 
-![alt text](./src/images/WireFrame2.png "WireFrame")
-
 
 ## Resources
 #### React Library: (https://legacy.reactjs.org/)
