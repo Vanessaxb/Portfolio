@@ -8,7 +8,7 @@ export default function Portfolio() {
       <h1 className="flex justify-center mt-10 md:mt-36 font-black text-gray-500 text-3xl md:text-6xl font-raleway text-center ">
         PROJECTS
       </h1>
-      <div className=" items-center p-20 mt-10 md:mt-28 ">
+      <div className=" items-center p-20 mt-6 md:mt-20 ">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="rounded-3xl p-1 shadow bg-gray-200/80 md:mr-4 mb-4 md:mb-0">
             <ReactPlayer

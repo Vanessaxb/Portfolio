@@ -30,10 +30,10 @@ export const ContactForm = () => {
 
   return (
     <StyledHeader>
-      <h1 className="mt-40 text-gray-500 text-5xl font-raleway font-black">
-        CONTACT:{" "}
+      <h1 className="mt-10 md:mt-40 text-gray-500 text-3xl md:text-5xl font-raleway font-black text-center">
+        CONTACT:
       </h1>
-      <h3 className="mt-16 font-black text-green-500 text-3xl font-raleway">
+      <h3 className="mt-6 md:mt-16 font-black text-green-500 text-xl md:text-3xl font-raleway text-center">
         Have a question or want to work together?
       </h3>
 
@@ -58,14 +58,13 @@ export default ContactForm;
 
 // Styles
 const StyledHeader = styled.div`
-  margin-top: 100px;
+  margin-top: 40px;
 `;
 
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: colum;
   justify-content: center;
-  // align-items: center;
   min-height: 100vh;
 `;
 
@@ -76,9 +75,8 @@ const StyledContactForm = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    font-size: 16px;
-    font-family: "Raleway", sans-serif;
+    min-height: 100vh;
+      
 
     input {
       width: 100%;
@@ -127,6 +125,9 @@ const StyledContactForm = styled.div`
         color: rgb(107 114 128);
         // color: rgb(239, 68, 68);
       }
+    }
+    @media (max-width: 768px) {
+      font-size 14px;
     }
   }
 `;

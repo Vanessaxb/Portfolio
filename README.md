@@ -43,3 +43,5 @@ The main challenge I had was learning how to style my pages using TailWind. It w
 #### TailWind: (https://tailwindcss.com/docs/adding-custom-styles)
 
 #### Unsplash: (https://unsplash.com/)
+
+#### EmailJs: (https://www.emailjs.com/docs/examples/reactjs/)
