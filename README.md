@@ -1,7 +1,9 @@
 # Portfolio
 This is my tech portfolio webpage.
 
-### Deployed version: (https://vanessab.netlify.app/)
+### Nelify Deployed version: (https://vanessab.netlify.app/)
+
+### GitHub Live Version: (https://vanessaxb.github.io/Portfolio/)
 
 ## Features
 
@@ -35,6 +37,8 @@ The main challenge I had was learning how to style my pages using TailWind. It w
 ## Images
 #### WireFaame
 ![alt text](./src/images/WireFrame.png "WireFrame")
+
+![alt text](./src/images/WireFrame copy.png "WireFrame")
 
 
 ## Resources
