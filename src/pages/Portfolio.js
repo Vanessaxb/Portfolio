@@ -50,7 +50,7 @@ export default function Portfolio() {
         <div className="flex flex-col md:flex-row justify-center items-center mt-14 md:mt-28 ml-4 md:ml-28">
           <div className="md:w-1/2">
             <img
-              className="h-[350px] md:h-[700] w-full md:w-[490px] rounded-3xl p-1 shadow bg-gray-200/80"
+              className="h-[450px] md:h-[700] w-full md:w-[490px] rounded-3xl p-1 shadow bg-gray-200/80"
               src={require("../images/StockApp.png")}
               alt="Stock App"
             />
